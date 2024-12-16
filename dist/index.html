@@ -1,353 +1,1132 @@
 <!-- src/layouts/main.hbs -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" type="image/x-icon" href="assets/images/logos/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <link rel="stylesheet" href="css/style.css">
-  <title></title>
+  <title>ASMO</title>
 </head>
 <body>
-  <header>
-    <div class="container">
-        <nav class="navbar">
-            <!-- Logo -->
-            <div class="logo">
-                <a href="/"><img src="/assets/images/logos/logo.png" alt="Logo"></a>
-            </div>
-
-            <!-- Navigation menu -->
-            <ul class="nav-menu">
-                <li class="dropdown">
-                    <a href="#">Products</a>
-                    <div class="dropdown-content">
-                        <a href="/products/category1">Category 1</a>
-                        <a href="/products/category2">Category 2</a>
-                        <a href="/products/category3">Category 3</a>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <a href="#">Cook with Sadia</a>
-                    <div class="dropdown-content">
-                        <a href="/recipes">Recipes</a>
-                        <a href="/tips">Cooking Tips</a>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <a href="#">About</a>
-                    <div class="dropdown-content">
-                        <a href="/about/company">Our Company</a>
-                        <a href="/about/sustainability">Sustainability</a>
-                    </div>
-                </li>
-            </ul>
-
-            <!-- Search, country flag, and language selector -->
-            <div class="nav-icons">
-                <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
-                <a href="#" class="flag-icon">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg" alt="Country Flag" class="flag">
-                </a>
-                <a href="#" class="language-selector">EN</a>
-            </div>
-        </nav>
+  
+    <div class="loaderWraps">
+        <div class="loaderLogo">
+            <img src="./assets/images/logos/logo.svg" loading="lazy" alt="icon">
+        </div>
     </div>
+
+
+<header class="main-header"  id="headerVisible">
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container-fluid">
+
+            <a class="navbar-brand headerLogo" id="moveLogo" href="/"><img class="logoImg" src="./assets/images/logos/logo.svg" alt="icon"></a>
+
+            <div class="collapse navbar-collapse hideMob-nav" id="main_nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown has-megamenu">
+                            <a class="nav-link dropdown-toggle" href="#">
+                                ABOUT US
+                            </a>
+                            <div class="dropdown-menu megamenu" role="menu">
+                                <div class="menuBg">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="row">
+                                                <div class="col-md-12 divis">
+                                                    <div class="subNav">
+                                                        <a class="nav-link" href="#">
+                                                            <p>Sho we are</p>
+                                                        </a>
+                                                    </div> 
+                                                    <div class="subNav">
+                                                        <a class="nav-link" href="#">
+                                                            <p>Sustainability</p>
+                                                        </a>
+                                                    </div> 
+                                                    <div class="subNav">
+                                                        <a class="nav-link" href="#">
+                                                            <p>Brand Guidelines</p>
+                                                        </a>
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7 menu_img">
+                                            <div class="navimg">
+                                                <img src="./assets/images/others/abt.png" class="img-fluid" alt="icon">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </li>
+                        <li class="nav-item dropdown has-megamenu">
+                            <a class="nav-link dropdown-toggle" href="#" >
+                                SOLUTIONS
+                            </a>
+                            <div class="dropdown-menu megamenu" role="menu">
+                                <div class="menuBg">
+                                    <div class="row">
+                                        <div class="col-md-7 col-lg-6">
+                                            <div class="row">
+                                                <div class="col-md-6 divis">
+                                                    <div class="subNav">
+                                                        <a class="nav-link" href="#">
+                                                            <p>Supply & Demand Planning</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="subNav">
+                                                        <a class="nav-link" href="#">
+                                                            <p>Supplier Management</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="subNav">
+                                                        <a class="nav-link" href="#">
+                                                            <p>Sourcing & Procurement</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="subNav">
+                                                        <a class="nav-link" href="#">
+                                                            <p>Inventory Management</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="subNav">
+                                                        <a class="nav-link" href="#">
+                                                            <p>Control Towe</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 divis">
+                                                    <div class="subNav">
+                                                        <a class="nav-link" href="#">
+                                                            <p>Logistic Contractor Management</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="subNav">
+                                                        <a class="nav-link" href="#">
+                                                            <p>Reclamation Management</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="subNav">
+                                                        <a class="nav-link" href="#">
+                                                            <p>E-Marketplace</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="subNav">
+                                                        <a class="nav-link" href="#">
+                                                            <p>Supply Chain & Logistics Managed Services</p>
+                                                        </a>
+                                                    </div>                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5 col-lg-6 menu_img">
+                                            <div class="navimg">
+                                                <img src="./assets/images/others/Solutions.png" class="img-fluid" alt="icon">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" >
+                                NEWS & INSIGHTS
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" >
+                                CAREERS
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                CONTACT US
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="navRights ms-auto">
+                        <div class="btn_spc"> 
+                            <a class="btn topBtn" href="#">YOUR INTEREST <img src="./assets/images/icons/arrow-right.svg" class="img-fluid" alt="icon"></a> 
+                        </div>
+                        <div class="rightSpc">
+                            <select class="langDrop">
+                                <option>عربي </option>
+                                <option>English </option>
+                            </select>
+                        </div>
+                    </div>
+
+            </div> 
+
+            <button class="navbar-toggler mobHamburg" type="button" data-bs-toggle="modal" data-bs-target="#mobileMenu">        
+                <img src="./assets/images/icons/bars.svg" loading="lazy" class="img-fluid iconMenu"alt="icon">
+            </button>
+
+        </div>
+    </nav>
 </header>
- <!-- Header Partial -->
-  <div class="container">
-  <div id="imageCarousel" class="carousel slide" data-ride="carousel" style="padding: 20px;"> <!-- Add padding here -->
-      <div class="carousel-inner">
-          <div class="carousel-item active">
-              <img src="/assets/images/banner/slider_1.png" class="d-block w-100" alt="First Image">
-          </div>
-          <div class="carousel-item">
-              <img src="/assets/images/banner/slider_2.png" class="d-block w-100" alt="Second Image">
-          </div>
-          <div class="carousel-item">
-              <img src="/assets/images/banner/slider_3.png" class="d-block w-100" alt="Third Image">
-          </div>
-      </div>
-      <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#imageCarousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-      </a>
-  </div>
-  </div>
+
+ 
+
+
+
+
+
+
+ <!-- HEADER Partial -->
   
-  <section class="popular-section">
-      <div class="container">
-          <h2>Our Popular Recipes</h2>
-      <div class="row">
-          <div class="col-12 text-center mb-3">
-              <div class="btn-group" role="group" aria-label="Recipe Categories">
-                  <button type="button" class="btn btn-outline-secondary">All</button>
-                  <button type="button" class="btn btn-outline-secondary">Airfryer</button>
-                  <button type="button" class="btn btn-outline-secondary">Quick and Easy</button>
-                  <button type="button" class="btn btn-outline-secondary">Seasonal</button>
-                  <button type="button" class="btn btn-outline-secondary">Region</button>
-                  <button type="button" class="btn btn-outline-secondary">Top Searched</button>
-              </div>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-md-4">
-              <div class="card">
-                  <img src="https://via.placeholder.com/300x200?text=Popular+Recipe+1" class="card-img-top" alt="Popular Recipe 1">
-                  <div class="card-body">
-                      <h5 class="card-title">Popular Recipe 1</h5>
-                      <p class="card-text">Description of popular recipe 1.</p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-4">
-              <div class="card">
-                  <img src="https://via.placeholder.com/300x200?text=Popular+Recipe+2" class="card-img-top" alt="Popular Recipe 2">
-                  <div class="card-body">
-                      <h5 class="card-title">Popular Recipe 2</h5>
-                      <p class="card-text">Description of popular recipe 2.</p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-4">
-              <div class="card">
-                  <img src="https://via.placeholder.com/300x200?text=Popular+Recipe+3" class="card-img-top" alt="Popular Recipe 3">
-                  <div class="card-body">
-                      <h5 class="card-title">Popular Recipe 3</h5>
-                      <p class="card-text">Description of popular recipe 3.</p>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="text-center mt-4">
-      <a href="#" class="btn btn-custom">View More Recipes</a> <!-- Use custom class here -->
-  </div>
-      </div>
-  </section>
-  <div class="container">
-      <section class="your-favorite">
-          <!-- Row with 3 sections -->
-          <div class="favorite-row">
-              <!-- Left Text -->
-              <div class="favorite-text">
-                  <h3>What is your favorite?</h3>
-              </div>
   
-              <!-- Center Image -->
-              <div class="favorite-image">
-                  <img src="https://via.placeholder.com/300x200?text=1" alt="Favorite Dish Image">
-              </div>
+  <section class="bannerSection" id="bannerMove">
+      <div class="bannerWraper">
   
-              <!-- Right Text -->
-              <div class="favorite-text">
-                  <p>100% Chicken Breast | 10+ products | 5+ recipes</p>
-                  <div class="header-section"></div>
-                  <h2>Breeded Chicken</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                  molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                  numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-                  optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-                  obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-                  nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-                  tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
-                  quia. Quo neque error repudiandae fuga?</p>
-                  <button class="btn btn-custom">View Products</button>
-              </div>
-          </div>
-  
-          <!-- Small card slider -->
-          <div class="favorite-slider">
-              <div class="scrollable-cards">
-                  <div class="card">
-                      <img src="https://via.placeholder.com/300x200?text=Popular+Recipe+1" alt="Small Image 1">
-                      <div class="card-body">
-                          <h5>Small Card 1</h5>
-                          <p>Description</p>
+          <div class="container">
+              <div class="bannerOuter">
+                  <div class="bannerConts" id="bannerCont_move">
+                      <div class="videoPop">
+                          <button type="button" class="pop-playBtn" data-bs-toggle="modal" data-bs-target="#videoModal"><img src="./assets/images/icons/play.svg" class="playIcon" alt="icon"></button>
+                      </div>
+                      <div class="bannerText">
+                          <p>The First Procurement & Logistics Hub in MENA for the Energy, Chemical and Industrial Sectors</p>
                       </div>
                   </div>
-                  <div class="card">
-                      <img src="https://via.placeholder.com/300x200?text=Popular+Recipe+2" alt="Small Image 2">
-                      <div class="card-body">
-                          <h5>Small Card 2</h5>
-                          <p>Description</p>
+              </div>
+  
+              <div class="modal fade videoPopup" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                              <img src="./assets/images/icons/pop-cl.svg" class="playIcon" alt="icon">
+                          </button>
+                          </div>
+                          <div class="modal-body">
+                          <div class="ratio ratio-16x9">
+                              <iframe id="videoIframe" 
+                                      src="https://www.youtube.com/embed/4FR0Nl1mKwU?rel=0&modestbranding=1&iv_load_policy=3" 
+                                      title="YouTube video player" 
+                                      frameborder="0" 
+                                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                      allowfullscreen>
+                              </iframe>
+                          </div>
+                          </div>
                       </div>
                   </div>
-                  <div class="card">
-                      <img src="https://via.placeholder.com/300x200?text=Popular+Recipe+1" alt="Small Image 1">
-                      <div class="card-body">
-                          <h5>Small Card 1</h5>
-                          <p>Description</p>
-                      </div>
-                  </div>
-                  <div class="card">
-                      <img src="https://via.placeholder.com/300x200?text=Popular+Recipe+2" alt="Small Image 2">
-                      <div class="card-body">
-                          <h5>Small Card 2</h5>
-                          <p>Description</p>
-                      </div>
-                  </div>
-                  <div class="card">
-                      <img src="https://via.placeholder.com/300x200?text=Popular+Recipe+2" alt="Small Image 2">
-                      <div class="card-body">
-                          <h5>Small Card 2</h5>
-                          <p>Description</p>
-                      </div>
-                  </div>
-                  <!-- Repeat small cards as needed -->
+              </div>
+  
+          </div>
+  
+          <div class="videoContainer">
+              <div class="bgVideo">
+                  <video autoplay muted loop playsinline>
+                      <source src="./assets/videos/banner.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                  </video>
               </div>
           </div>
-      </section>
-  </div>
-  <section class="photo-gallery">
+  
+      </div>
+  </section>
+  
+  
+  <section class="floatingNav">
       <div class="container">
-          <h2 class="gallery-header">Truly Farm to Table</h2>
-      
-      <div class="row">
-          <!-- First Row - First Image Large, Second Image Small -->
-          <div class="col large">
-              <img src="https://via.placeholder.com/300x200?text=1" alt="Farm Large">
+  
+          <ul class="menuBoxs postDivs"  id="floatmenuMove">
+              <li>
+                  <a href="#sec_solution">
+                      <span class="menuImg">
+                          <img src="./assets/images/icons/menu-1.png" class="menuIcon" alt="icon">
+                      </span>
+                      <span class="menuTitle">
+                          <p>Solutions</p>
+                      </span>
+                  </a>
+              </li>
+              <li>
+                  <a href="#sec_principal">
+                      <span class="menuImg">
+                          <img src="./assets/images/icons/menu-2.png" class="menuIcon" alt="icon">
+                      </span>
+                      <span class="menuTitle">
+                          <p>Principles</p>
+                      </span>
+                  </a>
+              </li>
+              <li>
+                  <a href="#sec_story">
+                      <span class="menuImg">
+                          <img src="./assets/images/icons/menu-3.png" class="menuIcon" alt="icon">
+                      </span>
+                      <span class="menuTitle">
+                          <p>Our Story</p>
+                      </span>
+                  </a>
+              </li>
+              <li>
+                  <a href="#sec_insights">
+                      <span class="menuImg">
+                          <img src="./assets/images/icons/menu-4.png" class="menuIcon" alt="icon">
+                      </span>
+                      <span class="menuTitle">
+                          <p>Insights</p>
+                      </span>
+                  </a>
+              </li>
+              <li>
+                  <a href="#sec_brand">
+                      <span class="menuImg">
+                          <img src="./assets/images/icons/menu-5.png" class="menuIcon" alt="icon">
+                      </span>
+                      <span class="menuTitle">
+                          <p>Brand Book</p>
+                      </span>
+                  </a>
+              </li>
+          </ul>
+  
+      </div>
+  
+  </section>
+  
+  <section class="top-sectCont secSpace">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-8">
+                  <h1 class="mainTitle">About Us</h1>
+                  <div class="descp">
+                      <p>
+                          Unlock valuable insights and data-driven reports to gain a deeper understanding of trends and opportunities in your industry
+                      </p>
+                  </div>
+              </div>
+              <div class="col-md-4 text-end">
+                  <a class="btn moreBtn" href="#">
+                      Learn More <img src="./assets/images/icons/Arrow-R.svg" class="ar_icon" alt="icon">
+                  </a>
+              </div>
           </div>
-          <div class="col small">
-              <img src="https://via.placeholder.com/300x200?text=2" alt="Table Small">
+      </div>
+  </section>
+  
+  
+  <section class="boxrptSec secSpace-btm" id="sec_story">
+      <div class="container-fluid">
+  
+  
+          <div class="boxDesig">
+              <div class="row aligTx">
+                  <div class="col-md-6 imgPad">
+                      <div class="imgSection">
+                          <img src="./assets/images/others/grid-1.png" class="bxImg img-fluid" alt="icon">
+                      </div>
+                  </div>
+                  <div class="col-md-6 boxConts">
+                      <h3 class="mainTitle">Our Vision</h3>
+                      <div class="descp">
+                          <p>
+                              To become the leading supply chain service provider for the energy, chemical, and industrial sectors in KSA and the wider MENA region.
+                          </p>
+                      </div>
+                      
+                      <div class="sperator"></div>
+  
+                      <h3 class="mainTitle">Our Mission</h3>
+                      <div class="descp">
+                          <p>
+                              To provide reliable, world-class end-to-end supply chain services, creating value for companies in the energy, chemical, and industrial sectors in KSA and the wider MENA region.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+          <div class="boxDesig">
+              <div class="row aligTx reverseGrid">
+                  <div class="col-md-6 boxConts">
+                      <h3 class="mainTitle">Advancing Saudi Vision 2030</h3>
+                      <div class="descp">
+                          <p>
+                              ASMO plays a role in realizing Saudi Arabia's Vision 2030. We are committed to driving the Kingdom’s economic diversification and industrial growth, aiming to establish a transportation and logistics hub that transcends local boundaries and emerges as a regional leader with global aspirations. <br> <br>
+                              As a leading end-to-end supply chain partner, ASMO empowers the local private sector, including SMEs, through initiatives that drive economic growth and create employment opportunities. We are dedicated to strengthening the Kingdom's supply chain resilience by actively participating in the IKTVA program.
+                          </p>
+                      </div>
+                  </div>
+                  <div class="col-md-6 imgPad">
+                      <div class="imgSection">
+                          <img src="./assets/images/others/grid-2.png" class="bxImg img-fluid" alt="icon">
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+           <div class="boxDesig">
+              <div class="row aligTx">
+                  <div class="col-md-6 imgPad">
+                      <div class="imgSection">
+                          <img src="./assets/images/others/grid-3.png" class="bxImg img-fluid" alt="icon">
+                      </div>
+                  </div>
+                  <div class="col-md-6 boxConts">
+                      <h3 class="mainTitle">Building Sustainable Communities</h3>
+                      <div class="descp">
+                          <p>
+                              Our mission extends beyond business—we strive to transform business practices to provide sustainable employment opportunities and protect the environment. Focusing on environmental, social, and governance (ESG) aspects, we develop and retain our employees, uphold the highest standards of corporate governance, and integrate principles of the circular economy.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+      </div>
+  </section>
+  
+  
+  <section class="solutiontWraper secSpace" id="sec_solution">
+  
+      <div class="topCont-sect">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-8">
+                      <h1 class="mainTitle">Solutions</h1>
+                      <div class="descp">
+                          <p>
+                              We combine industry expertise with advanced technology to deliver solutions that meet the evolving needs of the energy, chemical, and industrial sectors. 
+                          </p>
+                      </div>
+                  </div>
+                  <div class="col-md-4 text-end">
+                      <a class="btn moreBtn" href="#">
+                          Learn More <img src="./assets/images/icons/Arrow-R.svg" class="ar_icon" alt="icon">
+                      </a>
+                  </div>
+              </div>
           </div>
       </div>
   
-      <div class="row">
-          <!-- Second Row - First Image Small, Second Image Large -->
-          <div class="col small">
-              <img src="https://via.placeholder.com/300x200?text=3" alt="Farm Small">
-          </div>
-          <div class="col large">
-              <img src="https://via.placeholder.com/300x200?text=4" alt="Table Large">
-          </div>
-      </div>
-      </div>
-  </section>
-  <section class="popular-section">
-      <div class="container">
-          <h2>COOKING HACKS</h2>
-      <div class="row">
-          <div class="col-md-4">
-              <div class="card">
-                  <img src="https://via.placeholder.com/300x200?text=Popular+Recipe+1" class="card-img-top" alt="Popular Recipe 1">
-                  <div class="card-body">
-                      <h5 class="card-title">Popular Recipe 1</h5>
-                      <p class="card-text">Description of popular recipe 1.</p>
+      <div class="container-fluid">
+            <div class="sliderWraper">
+                <div class="sliderBoxs slider-carousel">
+                  <div class="slide">
+                      <div class="servBox">
+                        <div class="imgBox">
+                            <img class="slideImg" src="./assets/images/icons/Icon_1.png" alt="icon1">
+                        </div>
+                        <div class="contWrapper">
+                          <div class="hvrCont">
+                            <h3 class="title">Supply & Demand Planning</h3>
+                            <div class="showContent">
+                              <div class="descp">
+                                  <p>ASMO strives for a seamless harmonization of all master data elements across all ecosystem participants, powered by future-proof technologies enabling integrated demand-planning and forecasting through aggregating inputs from participating companies.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                   </div>
-              </div>
-          </div>
-          <div class="col-md-4">
-              <div class="card">
-                  <img src="https://via.placeholder.com/300x200?text=Popular+Recipe+2" class="card-img-top" alt="Popular Recipe 2">
-                  <div class="card-body">
-                      <h5 class="card-title">Popular Recipe 2</h5>
-                      <p class="card-text">Description of popular recipe 2.</p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-4">
-              <div class="card">
-                  <img src="https://via.placeholder.com/300x200?text=Popular+Recipe+3" class="card-img-top" alt="Popular Recipe 3">
-                  <div class="card-body">
-                      <h5 class="card-title">Popular Recipe 3</h5>
-                      <p class="card-text">Description of popular recipe 3.</p>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="text-center mt-4">
-      <a href="#" class="btn btn-custom">VIEW MORE RECIPES</a> <!-- Use custom class here -->
-  </div>
-      </div>
-  </section>
-  <section class="find-us">
-      <div class="container">
-          <h2>FIND US</h2>
-      <div class="row">
-          <!-- First column: Map image -->
-          <div class="col-md-6">
-              <img src="https://via.placeholder.com/600x400?text=Map+Image" alt="Map">
-          </div>
-          
-          <!-- Second column: Description, dropdown, and button -->
-          <div class="col-md-6 text-center">
-              <h3>Across the Middle East</h3>
-              <p>Find us at a supermarket near you or shop online for even greater convenience.</p>
   
-              <!-- Dropdown with reduced width -->
-              <div class="dropdown-container">
-                  <select class="form-select custom-dropdown" aria-label="Select Country">
-                      <option selected>Select your country</option>
-                      <option value="1">Saudi Arabia</option>
-                      <option value="2">United Arab Emirates</option>
-                      <option value="3">Qatar</option>
-                      <option value="4">Kuwait</option>
-                      <option value="5">Oman</option>
-                  </select>
+                  <div class="slide">
+                      <div class="servBox">
+                        <div class="imgBox">
+                            <img class="slideImg" src="./assets/images/icons/Icon_2.png" alt="icon2">
+                        </div>
+                        <div class="contWrapper">
+                          <div class="hvrCont">
+                            <h3 class="title">Supplier Management</h3>
+                            <div class="showContent">
+                              <div class="descp">
+                                  <p>We serve as the central hub for accessing an optimized, well-managed, and disciplined supplier base. It facilitates sustainable procurement decisions including sourcing and international supply chain design through intuitive, automated technology, and processes tailored to meet the demands of its customers.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+  
+                  <div class="slide">
+                      <div class="servBox">
+                        <div class="imgBox">
+                            <img class="slideImg" src="./assets/images/icons/Icon_3.png" alt="icon3">
+                        </div>
+                        <div class="contWrapper">
+                          <div class="hvrCont">
+                            <h3 class="title">Sourcing & Procurement</h3>
+                            <div class="showContent">
+                              <div class="descp">
+                                  <p>We specialize in consolidated sourcing procurement of materials services from domestic international suppliers. This service includes catalog management, harmonization standardization, streamlined procure-to-pay processes, tailored to enhance efficiency cost-effectiveness for customers. By optimizing these processes, ASMO ensures supply needs are met promptly with precision, supporting seamless operations across industries.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+  
+                  <div class="slide">
+                      <div class="servBox">
+                        <div class="imgBox">
+                            <img class="slideImg" src="./assets/images/icons/Icon_4.png" alt="icon4">
+                        </div>
+                        <div class="contWrapper">
+                          <div class="hvrCont">
+                            <h3 class="title">Inventory Management</h3>
+                            <div class="showContent">
+                              <div class="descp">
+                                  <p>We integrate innovative solutions to manage and optimize inventory. Its approach ensures efficient storage, reduces excess inventory, and streamlines the flow of goods. Through advanced technology and data integration, ASMO provides real-time visibility and control over inventory levels, enabling strategic decision-making, reducing obsolescence, and improving operational efficiency.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+  
+                  <div class="slide">
+                      <div class="servBox">
+                        <div class="imgBox">
+                            <img class="slideImg" src="./assets/images/icons/Icon_8.png" alt="icon5">
+                        </div>
+                        <div class="contWrapper">
+                          <div class="hvrCont">
+                            <h3 class="title">Control Tower</h3>
+                            <div class="showContent">
+                              <div class="descp">
+                                  <p>Our Control Tower offers comprehensive visibility and control over the end-to-end supply chain. By integrating predictive analytics and real-time data, the Control Tower enhances decision-making and operational efficiency. It allows for proactive management of supply chain activities, identifying potential disruptions before they occur, and ensuring seamless integration with existing systems.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+  
+                  <div class="slide">
+                      <div class="servBox">
+                        <div class="imgBox">
+                            <img class="slideImg" src="./assets/images/icons/Icon_6.png" alt="icon6">
+                        </div>
+                        <div class="contWrapper">
+                          <div class="hvrCont">
+                            <h3 class="title">Logistics Contractor Management</h3>
+                            <div class="showContent">
+                              <div class="descp">
+                                  <p>We collaborate with a network of supply chain partners to seamlessly deliver value to customers. By managing logistics contractors, ASMO ensures efficient, reliable, and safe operations, as well as contributing to sustainable in-country value.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+  
+                  <div class="slide">
+                     <div class="servBox">
+                        <div class="imgBox">
+                            <img class="slideImg" src="./assets/images/icons/Icon_7.png" alt="icon7">
+                        </div>
+                        <div class="contWrapper">
+                          <div class="hvrCont">
+                            <h3 class="title">Reclamation Management</h3>
+                            <div class="showContent">
+                              <div class="descp">
+                                  <p>We offer comprehensive reclamation services for obsolete inventory, including repair, refurbishment, recycling, returning to suppliers, and responsible waste disposal. This service is designed to maximize value from reverse supply chain activities, supporting a circular economy and reducing environmental impacts.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+  
+                  <div class="slide">
+                      <div class="servBox">
+                        <div class="imgBox">
+                            <img class="slideImg" src="./assets/images/icons/Icon_8.png" alt="icon8">
+                        </div>
+                        <div class="contWrapper">
+                          <div class="hvrCont">
+                            <h3 class="title">e-Marketplace</h3>
+                            <div class="showContent">
+                              <div class="descp">
+                                  <p>Our B2B e-Marketplace simplifies the purchasing process by connecting multiple suppliers and customers seamlessly. The state-of-the-art platform allows for efficient and transparent transactions with just the click of a button, enhancing connectivity and collaboration across the supply chain. This solution ensures that procurement needs are met efficiently and effectively.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+  
+                  <div class="slide">
+                      <div class="servBox">
+                        <div class="imgBox">
+                            <img class="slideImg" src="./assets/images/icons/Icon_9.png" alt="icon9">
+                        </div>
+                        <div class="contWrapper">
+                          <div class="hvrCont">
+                            <h3 class="title">Supply Chain & Logistics Managed Services</h3>
+                            <div class="showContent">
+                              <div class="descp">
+                                  <p>We meticulously plan, manage, and execute comprehensive end-to-end supply chain solutions, ensuring the seamless movement of materials from vendors to end customers. Covering aspects such as inbound transportation, storage, and distribution, ASMO operates as a fourth-party logistics provider (4PL), optimizing logistics to achieve maximum efficiency and resilience across the supply chain.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+  
+                </div>
+            </div>
+      </div>
+  
+  </section>
+  
+  
+  <section class="solutiontWraper successWraper secSpace"  id="sec_principal">
+  
+      <div class="topCont-sect">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-8">
+                      <h1 class="mainTitle">Our Principles of Success</h1>
+                      <div class="descp">
+                          <p>
+                              Empowering individuals to drive innovation with courage, passion, and purpose
+                          </p>
+                      </div>
+                  </div>
+                  <div class="col-md-4 text-end">
+                      <a class="btn moreBtn" href="#">
+                          Learn More <img src="./assets/images/icons/Arrow-R.svg" class="ar_icon" alt="icon">
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+       <div class="wraper SuccessGrids">
+            <div class="sliderWraper succesSlider">
+                <div class="sliderBoxs slider-grid">
+                  <div class="slide">
+                      <div class="servBox">
+                          <div class="contWrapper">
+                              <div class="hvrCont">
+                              <h3 class="title">Teamwork</h3>
+                              <div class="descp">
+                                      <p>We are an empowered team, driven by passion and a 'Dare to Lead' attitude</p>
+                              </div>
+                              <div class="showContent">
+                                  <div class="descp">
+                                      <p>We believe in the power of each individual. We encourage our people to take initiative, embrace challenges, and drive innovation. We prioritize the well-being and safety of our team and empower them to lead with courage and confidence. Our passionate and motivated employees are essential to our success, with each person playing a role in shaping our future & building our community.</p>
+                                  </div>
+                              </div>
+                              </div>
+                          </div>
+                        
+                          <div class="imgBox">
+                              <img class="slideImg" src="./assets/images/others/success_1.png" alt="img1">
+                          </div>
+                        </div>
+                  </div>
+  
+                  <div class="slide">
+                      <div class="servBox">
+                        <div class="contWrapper">
+                          <div class="hvrCont">
+                            <h3 class="title">Integrity</h3>
+                            <div class="descp">
+                                  <p>We build on a foundation of shared trust</p>
+                            </div>
+                            <div class="showContent">
+                              <div class="descp">
+                                  <p>Integrity is at the heart of everything we do. It is the quality of being honest and showing a consistent and uncompromising adherence to strong moral and ethical principles and values. We believe that being open, honest, and transparent is crucial for building trust. Our commitment to integrity ensures that every action we take is responsible and trustworthy, forming the foundation of our relationships and success.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+  
+                        <div class="imgBox">
+                            <img class="slideImg" src="./assets/images/others/success_2.png" alt="img2">
+                        </div>
+                      </div>
+                  </div>
+  
+                  <div class="slide">
+                      <div class="servBox">
+                        <div class="contWrapper">
+                          <div class="hvrCont">
+                            <h3 class="title">Respect</h3>
+                            <div class="descp">
+                                  <p>We Respect & Value Every Link in the Chain</p>
+                            </div>
+                            <div class="showContent">
+                              <div class="descp">
+                                  <p>We believe that without respect, there is no link, no chain, and no success. Our success depends on the strength of every link in our chain. If one link is broken, the entire chain is compromised. Our commitment to respect extends from the environment to our people, customers, and suppliers, ensuring that each link is valued and supported.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+  
+                        <div class="imgBox">
+                            <img class="slideImg" src="./assets/images/others/success_3.png" alt="img3">
+                        </div>
+                      </div>
+                  </div>
+  
+                  <div class="slide">
+                      <div class="servBox">
+                        <div class="contWrapper">
+                          <div class="hvrCont">
+                            <h3 class="title">Accountability</h3>
+                            <div class="descp">
+                                  <p>We are accountable in owning our actions and results</p>
+                            </div>
+                            <div class="showContent">
+                              <div class="descp">
+                                  <p>We take full responsibility for our actions and outcomes. We believe in owning our decisions and their impacts, ensuring that we deliver on our promises and maintain the trust of our partners and clients</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+  
+                        <div class="imgBox">
+                            <img class="slideImg" src="./assets/images/others/success_4.png" alt="img4">
+                        </div>
+                      </div>
+                  </div>
+  
+                  <div class="slide">
+                      <div class="servBox">
+                        <div class="contWrapper">
+                          <div class="hvrCont">
+                            <h3 class="title">Customer Centric</h3>
+                            <div class="descp">
+                                  <p>Our customers are at the core of every link in our chain</p>
+                            </div>
+                            <div class="showContent">
+                              <div class="descp">
+                                  <p>We recognize that our internal and external customers are the foundation of our success. We aim to understand their end-to-end needs, build strong relationships, and consistently provide value. By focusing on our customers, we strive to make each link in our supply chain operate seamlessly, driving efficiency, reliability, and mutual growth.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+  
+                        <div class="imgBox">
+                            <img class="slideImg" src="./assets/images/others/success_5.png" alt="img5">
+                        </div>
+                      </div>
+                  </div>
+  
+                  <div class="slide">
+                      <div class="servBox">
+                        <div class="contWrapper">
+                          <div class="hvrCont">
+                            <h3 class="title">Excellence</h3>
+                            <div class="descp">
+                                  <p>We strive for excellence in everything we do, prioritizing safety at every step</p>
+                            </div>
+                            <div class="showContent">
+                              <div class="descp">
+                                  <p>We define excellence as delivering the highest standards while ensuring the safety of our team and partners. We are committed to being industry pioneers, continuously improving and innovating to stay ahead. We aim is to shape tomorrow's supply chain with world-class, reliable, efficient, and sustainable services. By embedding safe practices at our core, we consistently deliver high-quality results.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="imgBox">
+                            <img class="slideImg" src="./assets/images/others/success_6.png" alt="img6">
+                        </div>
+                      </div>
+                  </div>
+  
+  
+                </div>
+            </div>
+      </div>
+     
+  </section>
+  
+  
+  <section class="insightWraper secSpace" id="sec_insights">
+  
+      <div class="topCont-sect">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-7">
+                      <h1 class="mainTitle">Insights & Reports</h1>
+                      <div class="descp">
+                          <p>
+                              Unlock valuable insights and data-driven reports to gain a deeper understanding of trends and opportunities in your industry
+                          </p>
+                      </div>
+                   </div>
+                  <div class="col-md-5 text-end">
+                      <a class="btn moreBtn" href="#">
+                          Learn More <img src="./assets/images/icons/Arrow-R.svg" class="ar_icon" alt="icon">
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+      <div class="container-fluid">
+          <div class="contBoxs ClrBx">
+              <div class="dates">
+                  <p>15 NOV 2024</p>
+               </div>
+              <h5 class="mainTitle">Insight Title</h5>
+              <div class="descp">
+                  <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+              </div>
+              <a class="btn moreBtn" href="#">
+                  Read More <img src="./assets/images/icons/Arrow-R.svg" class="ar_icon" alt="icon">
+              </a>
+          </div>
+  
+          <div class="insightbg">
+              <img src="./assets/images/others/insight.png" class="bxs_img" alt="icon">
+          </div>
+      </div>
+  
+  </section>
+  
+  
+  <section class="latestWraper secSpace">
+      <div class="container">
+  
+          <h3 class="mainTitle">The Latest</h3>
+  
+          <div class="cardContainer horizontal-scroll">
+              <div class="d-flex flex-nowrap cardAlign">
+                  <div class="card newsGrid">
+                      <div class="boxConts">
+                          <div class="dates">
+                              <p>15 NOV 2024</p>
+                          </div>
+                          <h6 class="mainTitle">Building Sustainable Communities</h6>
+                          <div class="descp">
+                               <p>
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                              </p>
+                          </div>
+                          <div class="folderWrap">
+                              <span class="iconImg">
+                                  <img src="./assets/images/icons/folder.svg" class="fold_icon" alt="icon">
+                              </span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="card newsGrid">
+                      <div class="boxConts">
+                          <div class="dates">
+                              <p>15 NOV 2024</p>
+                          </div>
+                          <h6 class="mainTitle">Building Sustainable Communities</h6>
+                          <div class="descp">
+                               <p>
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                              </p>
+                          </div>
+                          <div class="folderWrap">
+                              <span class="iconImg">
+                                  <img src="./assets/images/icons/folder.svg" class="fold_icon" alt="icon">
+                              </span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="card newsGrid">
+                      <div class="boxConts">
+                          <div class="dates">
+                              <p>15 NOV 2024</p>
+                          </div>
+                          <h6 class="mainTitle">Building Sustainable Communities</h6>
+                          <div class="descp">
+                               <p>
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                              </p>
+                          </div>
+                          <div class="folderWrap">
+                              <span class="iconImg">
+                                  <img src="./assets/images/icons/folder.svg" class="fold_icon" alt="icon">
+                              </span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+      </div>
+  </section>
+  
+  
+  <section class="upcomingEvntWraper secSpace">
+      <div class="container">
+  
+          <h3 class="mainTitle">Upcoming Events</h3>
+  
+          <div class="cardContainer horizontal-scroll">
+              <div class="d-flex flex-nowrap cardAlign">
+                  <div class="card eventGrid">
+                      <div class="storyBoxs">
+                          <div class="imgSection">
+                              <img src="./assets/images/others/event-1.png" class="UpImgs img-fluid" alt="icon">
+                          </div>
+                          <div class="boxConts">
+                              <div class="dates">
+                                  <p>15 NOV 2024</p>
+                              </div>
+                              <h6 class="mainTitle">Event title 1</h6>
+                              <div class="locations">
+                                  <span class="locImg">
+                                      <img src="./assets/images/icons/loc.svg" class="loc_icon" alt="icon">
+                                  </span>
+                                  <p>
+                                      19, 23 Street, M Road, Dubai, United Arab Emirates
+                                  </p>
+                              </div>
+                              <a class="btn moreBtn" href="#">Read more<img src="./assets/images/icons/Arrow-R.svg" class="ar_icon" alt="icon"></a>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <div class="card eventGrid">
+                      <div class="storyBoxs">
+                          <div class="imgSection">
+                              <img src="./assets/images/others/event-2.png" class="UpImgs img-fluid" alt="icon">
+                          </div>
+                          <div class="boxConts">
+                              <div class="dates">
+                                  <p>15 NOV 2024</p>
+                              </div>
+                              <h6 class="mainTitle">Event title 1</h6>
+                              <div class="locations">
+                                  <span class="locImg">
+                                      <img src="./assets/images/icons/loc.svg" class="loc_icon" alt="icon">
+                                  </span>
+                                  <p>
+                                      19, 23 Street, M Road, Dubai, United Arab Emirates
+                                  </p>
+                              </div>
+                              <a class="btn moreBtn" href="#">Read more<img src="./assets/images/icons/Arrow-R.svg" class="ar_icon" alt="icon"></a>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <div class="card eventGrid">
+                      <div class="storyBoxs">
+                          <div class="imgSection">
+                              <img src="./assets/images/others/event-3.png" class="UpImgs img-fluid" alt="icon">
+                          </div>
+                          <div class="boxConts">
+                              <div class="dates">
+                                  <p>15 NOV 2024</p>
+                              </div>
+                              <h6 class="mainTitle">Event title 1</h6>
+                              <div class="locations">
+                                  <span class="locImg">
+                                      <img src="./assets/images/icons/loc.svg" class="loc_icon" alt="icon">
+                                  </span>
+                                  <p>
+                                      19, 23 Street, M Road, Dubai, United Arab Emirates
+                                  </p>
+                              </div>
+                              <a class="btn moreBtn" href="#">Read more<img src="./assets/images/icons/Arrow-R.svg" class="ar_icon" alt="icon"></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+      </div>
+  </section>
+  
+  
+  <section class="storyWraper secSpace"  id="sec_brand">
+      <div class="container">
+         
+          <div class="row">
+              <div class="col-md-6 spryDiv">
+                  <div class="storyBoxs">
+                      <div class="imgSection">
+                          <img src="./assets/images/others/bx1.png" class="bxImg img-fluid" alt="icon">
+                      </div>
+                      <div class="boxConts">
+                          <h3 class="mainTitle">Join our team to become part of our story</h3>
+                          <a class="btn moreBtn" href="#">Explore Opportunities <img src="./assets/images/icons/Arrow-R.svg" class="ar_icon" alt="icon"></a>
+                      </div>
+                  </div>
               </div>
   
-              <!-- Button (force it to remain below) -->
-              <div class="button-container">
-                  <button class="btn btn-custom mt-3">Where to Buy</button>
+              <div class="col-md-6 spryDiv">
+                  <div class="storyBoxs">
+                      <div class="imgSection">
+                          <img src="./assets/images/others/bx2.png" class="bxImg img-fluid" alt="icon">
+                      </div>
+                      <div class="boxConts">
+                          <div class="versionInfo rightSect">Version 2.0</div>
+                          <h3 class="mainTitle">Join our team to become part of our story</h3>
+                          <a class="btn moreBtn" href="#">View Brand Guideline <img src="./assets/images/icons/Arrow-R.svg" class="ar_icon" alt="icon"></a>
+                      </div>
+                  </div>
               </div>
           </div>
+  
       </div>
-      </div> 
   </section>
-  <section class="whats-on-sadia">
+  
+  
+  <section class="letsContWraper secSpace">
       <div class="container">
-          <h2>What's on Sadia</h2>
-      <div class="scrollable-cards">
-          <div class="card">
-              <img src="https://via.placeholder.com/600x400?text=1+Image" alt="Sadia content 1">
-              <div class="card-body">
-                  <h5>Title 1</h5>
-                  <p>Description for card 1</p>
+  
+          <div class="row">
+              <div class="col-md-5 contSect">
+                  <h3 class="mainTitle">Let’s Connect</h3>
+                  <div class="descp">
+                      <p>
+                          Share your details with us and we’ll get back to you at the earliest.
+                      </p>
+                  </div>
+              </div>
+  
+              <div class="col-md-7 formWraper">
+                  <h3 class="formTitle">I am interested as a</h3>
+                  <div class="formContainer">
+                      <form class="row">
+                          <div class="col-md-12">
+                              <div class="radio-group radSpc">
+                                  <label class="custom-radio">
+                                      <input type="radio" name="agreement" value="true" checked required>
+                                      <span class="radio-label">Supplier</span>
+                                  </label>
+                                  <label class="custom-radio">
+                                      <input type="radio" name="agreement" value="false">
+                                      <span class="radio-label">Customer</span> 
+                                  </label>
+                              </div>
+                          </div>
+                          <div class="col-md-12">
+                              <div class="form-group">
+                                  <input type="text" class="form-control" id="fullName" placeholder="Name">
+                                  <span class="error-message" id="nameError" style="display: none;">Full Name is required.</span>
+                              </div>
+                          </div>
+                          <div class="col-md-12">
+                              <div class="form-group">
+                                  <input type="email" class="form-control" id="email" placeholder="Email">
+                                  <span class="error-message" id="emailError" style="display: none;">Please enter a valid email address.</span>
+                              </div>
+                          </div>
+                          <div class="col-md-12">
+                              <div class="form-group">
+                                  <div class="form-group">
+                                      <input type="tel" class="form-control" id="phoneNumber" placeholder="Phone">
+                                      <span class="error-message" id="phoneError" style="display: none;">Please enter a valid phone number.</span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-12">
+                              <div class="form-group">
+                                  <textarea class="form-control" id="message" placeholder="Comments" minlength="10"></textarea>
+                                  <span class="error-message" id="messageError" style="display: none;">Please enter a message with at least 10 characters.</span>
+                              </div>
+                          </div>
+                          <div class="col-md-12">
+                              <div class="form-group text-end">
+                                  <button type="submit" class="btn subBtn">Submit <img src="./assets/images/icons/arrow-right.svg" class="img-fluid" alt="icon"></button>
+                              </div>
+                          </div>
+                      </form>
+                  </div>
               </div>
           </div>
-          <div class="card">
-              <img src="https://via.placeholder.com/600x400?text=2+Image" alt="Sadia content 2">
-              <div class="card-body">
-                  <h5>Title 2</h5>
-                  <p>Description for card 2</p>
-              </div>
-          </div>
-          <div class="card">
-              <img src="https://via.placeholder.com/600x400?text=3+Image" alt="Sadia content 1">
-              <div class="card-body">
-                  <h5>Title 1</h5>
-                  <p>Description for card 1</p>
-              </div>
-          </div>
-          <div class="card">
-              <img src="https://via.placeholder.com/600x400?text=4+Image" alt="Sadia content 2">
-              <div class="card-body">
-                  <h5>Title 2</h5>
-                  <p>Description for card 2</p>
-              </div>
-          </div>
-          <!-- Repeat cards as needed -->
-      </div>
+  
       </div>
   </section>
+  
+  
   <!-- src/partials/footer.hbs -->
 <footer>
-    <div class="container">
-        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
-        </nav>
+
+  <div class="container">
+
+    <!-- Scroll-to-Top Button -->
+    <div id="scrollToTop" class="scroll-to-top">
+      <img class="scrollIcon" src="./assets/images/icons/scroll.svg" alt="icon" />
     </div>
-</footer>
- <!-- Footer Partial -->
+    <!-- Scroll-to-Top Button -->
+
+    <div class="footer-grid">
+      <div class="row">
+
+        <div class="col-md-8">
+          <div class="ftrLogoWrap order-1">
+            <a class="" href="/">
+              <img class="footer-logo" src="./assets/images/logos/logo.svg" loading="lazy" alt="Footer Logo" />
+            </a>
+          </div>
+       
+          <div class="ftrLinks order-2">
+            <ul>
+              <li><a href="#">ABOUT US</a></li>
+              <li><a href="#">SOLUTIONS</a></li>
+              <li><a href="#">NEWS & INSIGHTS</a></li>
+              <li><a href="#">CAREERS</a></li>
+              <li><a href="#">CONTACT US</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-socials order-3">
+            <ul>
+              <li><a href="#"><img class="social_cons img-fluid" src="./assets/images/icons/youtube.svg" alt="icon" /></a></li>
+              <li><a href="#"><img class="social_cons img-fluid" src="./assets/images/icons/linkedin.svg" alt="icon" /></a></li>
+            </ul>
+          </div>
+
+        </div>
+
+
+        <div class="col-md-4 ftrNewsletter">
+          <div class="newsletterWrap">
+            <h4 class="newsTitle">Subscribe to Our Newsletter</h4>
+            <form>
+              <div class="formGrp">
+                <input type="email" class="form-control" id="email" placeholder="Email" required>
+                <button type="submit" class="btn btn-signup">
+                  Subscribe  <img src="./assets/images/icons/arrow-right.svg" class="img-fluid" alt="icon">
+                </button>
+              </div>
+              
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-end col-md-12 order-5">
+          <div class="row">
+            <div class="footer-copyright col-md-7">
+              <p>Copyright © 2024,&nbsp;<a href="#">ASMO.</a>&nbsp;All Rights Reserved. </p>
+            </div>
+
+            <ul class="ftr_links col-md-5">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</footer> <!-- FOOTER Partial -->
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/main.bundle.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

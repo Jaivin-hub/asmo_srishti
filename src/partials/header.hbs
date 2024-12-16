@@ -1,45 +1,292 @@
-<header>
-    <div class="container">
-        <nav class="navbar">
-            <!-- Logo -->
-            <div class="logo">
-                <a href="/"><img src="/assets/images/logos/logo.png" alt="Logo"></a>
-            </div>
 
-            <!-- Navigation menu -->
-            <ul class="nav-menu">
-                <li class="dropdown">
-                    <a href="#">Products</a>
-                    <div class="dropdown-content">
-                        <a href="/products/category1">Category 1</a>
-                        <a href="/products/category2">Category 2</a>
-                        <a href="/products/category3">Category 3</a>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <a href="#">Cook with Sadia</a>
-                    <div class="dropdown-content">
-                        <a href="/recipes">Recipes</a>
-                        <a href="/tips">Cooking Tips</a>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <a href="#">About</a>
-                    <div class="dropdown-content">
-                        <a href="/about/company">Our Company</a>
-                        <a href="/about/sustainability">Sustainability</a>
-                    </div>
-                </li>
-            </ul>
-
-            <!-- Search, country flag, and language selector -->
-            <div class="nav-icons">
-                <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
-                <a href="#" class="flag-icon">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg" alt="Country Flag" class="flag">
-                </a>
-                <a href="#" class="language-selector">EN</a>
-            </div>
-        </nav>
+    {{!-- Loader-Logo START --}}
+    <div class="loaderWraps">
+        <div class="loaderLogo">
+            <img src="./assets/images/logos/logo.svg" loading="lazy" alt="icon">
+        </div>
     </div>
+    {{!-- Loader-Logo END --}}
+
+
+<header class="main-header"  id="headerVisible">
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container-fluid">
+
+            <a class="navbar-brand headerLogo" id="moveLogo" href="/"><img class="logoImg" src="./assets/images/logos/logo.svg" alt="icon"></a>
+
+            <div class="collapse navbar-collapse hideMob-nav" id="main_nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown has-megamenu">
+                            <a class="nav-link dropdown-toggle" href="#">
+                                ABOUT US
+                            </a>
+                            <div class="dropdown-menu megamenu" role="menu">
+                                <div class="menuBg">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="row">
+                                                <div class="col-md-12 divis">
+                                                    <div class="subNav">
+                                                        <a class="nav-link" href="#">
+                                                            <p>Sho we are</p>
+                                                        </a>
+                                                    </div> 
+                                                    <div class="subNav">
+                                                        <a class="nav-link" href="#">
+                                                            <p>Sustainability</p>
+                                                        </a>
+                                                    </div> 
+                                                    <div class="subNav">
+                                                        <a class="nav-link" href="#">
+                                                            <p>Brand Guidelines</p>
+                                                        </a>
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7 menu_img">
+                                            <div class="navimg">
+                                                <img src="./assets/images/others/abt.png" class="img-fluid" alt="icon">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </li>
+                        <li class="nav-item dropdown has-megamenu">
+                            <a class="nav-link dropdown-toggle" href="#" >
+                                SOLUTIONS
+                            </a>
+                            <div class="dropdown-menu megamenu" role="menu">
+                                <div class="menuBg">
+                                    <div class="row">
+                                        <div class="col-md-7 col-lg-6">
+                                            <div class="row">
+                                                <div class="col-md-6 divis">
+                                                    <div class="subNav">
+                                                        <a class="nav-link" href="#">
+                                                            <p>Supply & Demand Planning</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="subNav">
+                                                        <a class="nav-link" href="#">
+                                                            <p>Supplier Management</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="subNav">
+                                                        <a class="nav-link" href="#">
+                                                            <p>Sourcing & Procurement</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="subNav">
+                                                        <a class="nav-link" href="#">
+                                                            <p>Inventory Management</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="subNav">
+                                                        <a class="nav-link" href="#">
+                                                            <p>Control Towe</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 divis">
+                                                    <div class="subNav">
+                                                        <a class="nav-link" href="#">
+                                                            <p>Logistic Contractor Management</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="subNav">
+                                                        <a class="nav-link" href="#">
+                                                            <p>Reclamation Management</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="subNav">
+                                                        <a class="nav-link" href="#">
+                                                            <p>E-Marketplace</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="subNav">
+                                                        <a class="nav-link" href="#">
+                                                            <p>Supply Chain & Logistics Managed Services</p>
+                                                        </a>
+                                                    </div>                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5 col-lg-6 menu_img">
+                                            <div class="navimg">
+                                                <img src="./assets/images/others/Solutions.png" class="img-fluid" alt="icon">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" >
+                                NEWS & INSIGHTS
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" >
+                                CAREERS
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                CONTACT US
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="navRights ms-auto">
+                        <div class="btn_spc"> 
+                            <a class="btn topBtn" href="#">YOUR INTEREST <img src="./assets/images/icons/arrow-right.svg" class="img-fluid" alt="icon"></a> 
+                        </div>
+                        <div class="rightSpc">
+                            <select class="langDrop">
+                                <option>عربي </option>
+                                <option>English </option>
+                            </select>
+                        </div>
+                    </div>
+
+            </div> 
+
+            <button class="navbar-toggler mobHamburg" type="button" data-bs-toggle="modal" data-bs-target="#mobileMenu">        
+                <img src="./assets/images/icons/bars.svg" loading="lazy" class="img-fluid iconMenu"alt="icon">
+            </button>
+
+        </div>
+    </nav>
 </header>
+
+ 
+
+
+
+{{!-- MOBILE-HEADER-MENU START --}}
+
+{{!-- <header class="mobileHeader">
+    <div class="modal fade mobileMenu" id="mobileMenu" tabindex="-1" aria-labelledby="mobileMenuLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-body">
+
+                    <div class="navbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown has-megamenu">
+                                <a class="nav-link dropdown-toggle" href="#">
+                                    ABOUT US
+                                </a>
+                                <div class="dropdown-menu megamenu" role="menu">
+                                    <div class="menuBg">
+                                      <div class="subNav">
+                                            <a class="nav-link" href="#">
+                                                <p>Sho we are</p>
+                                            </a>
+                                        </div> 
+                                        <div class="subNav">
+                                            <a class="nav-link" href="#">
+                                                <p>Sustainability</p>
+                                            </a>
+                                        </div> 
+                                        <div class="subNav">
+                                            <a class="nav-link" href="#">
+                                                <p>Brand Guidelines</p>
+                                            </a>
+                                        </div> 
+                                    </div>
+                                </div> 
+                            </li>
+                            <li class="nav-item dropdown has-megamenu">
+                                <a class="nav-link dropdown-toggle" href="#" >
+                                    SOLUTIONS
+                                </a>
+                                <div class="dropdown-menu megamenu" role="menu">
+                                    <div class="menuBg">
+                                               
+                                        <div class="subNav">
+                                            <a class="nav-link" href="#">
+                                                <p>Supply & Demand Planning</p>
+                                            </a>
+                                        </div>
+                                        <div class="subNav">
+                                            <a class="nav-link" href="#">
+                                                <p>Supplier Management</p>
+                                            </a>
+                                        </div>
+                                        <div class="subNav">
+                                            <a class="nav-link" href="#">
+                                                <p>Sourcing & Procurement</p>
+                                            </a>
+                                        </div>
+                                        <div class="subNav">
+                                            <a class="nav-link" href="#">
+                                                <p>Inventory Management</p>
+                                            </a>
+                                        </div>
+                                        <div class="subNav">
+                                            <a class="nav-link" href="#">
+                                                <p>Control Towe</p>
+                                            </a>
+                                        </div>  
+                                        <div class="subNav">
+                                            <a class="nav-link" href="#">
+                                                <p>Logistic Contractor Management</p>
+                                            </a>
+                                        </div>
+                                        <div class="subNav">
+                                            <a class="nav-link" href="#">
+                                                <p>Reclamation Management</p>
+                                            </a>
+                                        </div>
+                                        <div class="subNav">
+                                            <a class="nav-link" href="#">
+                                                <p>E-Marketplace</p>
+                                            </a>
+                                        </div>
+                                        <div class="subNav">
+                                            <a class="nav-link" href="#">
+                                                <p>Supply Chain & Logistics Managed Services</p>
+                                            </a>
+                                        </div>     
+                                    </div>
+                                </div> 
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" >
+                                    NEWS & INSIGHTS
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" >
+                                    CAREERS
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    CONTACT US
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="langSect">
+                        <ul class="langMenu">
+                            <li><a class="nav-lang toggle-en active" href="#">English</a></li>
+                            <li><a class="nav-lang toggle-ar"> عربي</a></li>
+                        </ul>
+                        
+                    </div>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> <img src="./assets/images/icons/close.svg" class="img-fluid iconMenu"alt="icon"> </button>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+</header> --}}
+
+
+{{!-- MOBILE-HEADER END --}}

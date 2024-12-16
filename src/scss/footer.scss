@@ -1,0 +1,193 @@
+
+@use 'custom' as *;
+
+
+
+footer {
+    background: $white-color;
+    color: $secondary-color;
+    padding: 100px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    .footer-container{
+        padding: 0 150px;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+    .ftrNewsletter{
+        margin: 0 0 20px;
+        padding-left: 0;
+        .newsletterWrap{
+            padding: 16px;
+            border-radius: 16px;
+            background-color: $bg-color;
+            color: $white-color;
+            width: 100%;
+            max-width: 375px;
+            float: right;
+            .newsTitle{
+                color: $white-color;
+                font-size: 16px;
+                line-height: 21px;
+                font-weight: 400;
+                margin: 0 0 16px 0;
+                padding: 0;
+            }
+            .form-control{
+                display: flex;
+                height: 48px;
+                padding: 4px 4px 4px 16px;
+                justify-content: space-between;
+                align-items: center;
+                align-self: stretch;
+                width: 100%;
+                outline: 0 !important;
+                border: 0 !important;
+                box-shadow: inherit !important;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                &::placeholder{
+                    color: #D6D6D6;
+                }
+            }
+            .btn-signup{
+                width: 100%;
+                background: $primary-color;
+                color: $white-color;
+                display: inline-flex;
+                padding: 0px 20px;
+                border-radius: 64px;
+                justify-content: center;
+                align-items: center;
+                gap: 12px;
+                align-self: stretch;
+                max-width: 100%;
+                width: auto;
+                height: 40px;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+
+                margin: 4px 4px 4px 0;
+                &:hover{
+                    background: $hover-color;
+                    color: $white-color;
+                }
+            }
+            .formGrp {
+                display: flex;
+                align-items: center;
+                position: relative;
+                background: $white-color;
+                border-radius: 64px;
+                overflow: hidden;
+            }
+        }
+       
+    }
+    .ftrLinks{
+        margin: 24px 0;
+        ul{
+            padding: 0;
+            margin: 0;
+            li{
+                font-size: 16px;
+                font-weight: 400;
+                margin-right: 35px;
+                
+                a{
+                    color: $secondary-color;
+                    position: relative;
+                    padding: 8px 0;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 0;
+                        height: 1px;
+                        background-color: $primary-color;
+                        transition: width 0.3s ease;
+                    }
+                    &:hover{
+                        &::after {
+                            width: 100%;
+                        }
+                    }
+                    
+                }
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+        
+    }
+    .footer-socials{
+        ul{
+            margin: 0;
+            padding: 0;
+            li{
+                margin-right: 24px;
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .footer-end{
+        color: $black-color;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 55px 0 0 0;
+        a{
+            color: $black-color;
+            text-decoration: none;
+        }
+        .ftr_links{
+            margin: 0;
+            justify-content: end;
+            li{
+                margin-right: 48px;
+                &:last-child{
+                    margin-right: 0;
+                }
+                a{
+                    position: relative;
+                    padding: 8px 0;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 0;
+                        height: 1px;
+                        background-color: $primary-color;
+                        transition: width 0.3s ease;
+                    }
+                    &:hover{
+                        &::after {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .footer-copyright{
+            margin: 8px 0;
+            p{
+                margin: 0;
+            }
+        }
+    }
+    
+}
+
+

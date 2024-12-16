@@ -5,13 +5,13 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: {
-    main: './src/js/index.js',     // Main entry point
-    slickslider: './src/js/slickslider.js', // Custom slick slider script
+    main: './src/js/index.js',
+    // slickslider: './src/js/slickslider.js',
   },
   output: {
-    filename: 'assets/js/[name].bundle.js',  // Dynamic output filenames for multiple entry points
+    filename: 'assets/js/[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    clean: true,  // Clean the output directory before each build
+    clean: true,
   },
   module: {
     rules: [
@@ -28,10 +28,29 @@ module.exports = {
       {
         test: /\.(sa|sc|c)ss$/i,
         use: [
-          MiniCssExtractPlugin.loader,  // Extracts CSS to separate file
-          'css-loader',  // Translates CSS into CommonJS
-          'sass-loader', // Compiles Sass to CSS
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true,
+            },
+          },
         ],
+      },
+      {
+        test: /\.(png|jpg|jpeg|gif|svg|webp)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/images/[name][ext]',
+        },
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/fonts/[name][ext]',
+        },
       },
     ],
   },
@@ -43,7 +62,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: 'src/pages/home.hbs',
-      inject: 'body', // Inject scripts at the end of the body
+      inject: 'body',
       filename: 'home.html',
     }),
     new MiniCssExtractPlugin({
@@ -52,14 +71,25 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [
         { from: './src/assets/images', to: './assets/images', noErrorOnMissing: true },
+        { from: './src/assets/videos', to: './assets/videos', noErrorOnMissing: true },
         { from: './src/assets/fonts', to: './assets/fonts', noErrorOnMissing: true },
+        { from: './node_modules/slick-carousel/slick/slick.css', to: './assets/css/slick.css' },
+        { from: './node_modules/slick-carousel/slick/slick-theme.css', to: './assets/css/slick-theme.css' },
+        { from: './node_modules/slick-carousel/slick/slick.min.js', to: './assets/js/slick.min.js' },
       ],
     }),
   ],
   devServer: {
     static: path.join(__dirname, 'dist'),
     port: 8080,
-    historyApiFallback: true,  // Allows routing to work with history API in single-page apps
+    historyApiFallback: true,
+    open: true,
+  },
+  resolve: {
+    extensions: ['.js', '.jsx', '.scss', '.css'],
+    alias: {
+      '@scss': path.resolve(__dirname, 'src/scss'),
+    },
   },
   mode: 'development',
 };
