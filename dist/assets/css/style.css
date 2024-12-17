@@ -112,7 +112,7 @@
 @charset "UTF-8";
 /* Slider */
 .slick-loading .slick-list {
-  background: #fff url(../assets/images/ajax-loader.gif) center center no-repeat;
+  background: #fff url(../../assets/images/ajax-loader.gif) center center no-repeat;
 }
 
 /* Icons */
@@ -120,8 +120,8 @@
   font-family: "slick";
   font-weight: normal;
   font-style: normal;
-  src: url(../assets/fonts/slick.eot);
-  src: url(../assets/fonts/slick.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/slick.woff) format("woff"), url(../assets/fonts/slick.ttf) format("truetype"), url(../assets/images/slick.svg#slick) format("svg");
+  src: url(../../assets/fonts/slick.eot);
+  src: url(../../assets/fonts/slick.eot?#iefix) format("embedded-opentype"), url(../../assets/fonts/slick.woff) format("woff"), url(../../assets/fonts/slick.ttf) format("truetype"), url(../../assets/images/slick.svg#slick) format("svg");
 }
 /* Arrows */
 .slick-prev,
@@ -434,7 +434,7 @@ header .navRights .rightSpc .langDrop {
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
-  background: url(../assets/images/arrow.svg);
+  background: url(../../assets/images/arrow.svg);
   background-repeat: no-repeat;
   background-position: 90% center;
   -webkit-appearance: none;
@@ -442,7 +442,7 @@ header .navRights .rightSpc .langDrop {
 }
 
 .mobileHeader .nav-link.dropdown-toggle::after {
-  background-image: url(../assets/images/arrow.svg);
+  background-image: url(../../assets/images/arrow.svg);
   border: 0;
   width: 13px;
   height: 8px;
@@ -1243,7 +1243,7 @@ header .navRights .rightSpc .langDrop {
   padding: 0;
 }
 .solutiontWraper .SuccessGrids .servBox:hover .contWrapper {
-  background: url(../assets/images/bg.png);
+  background: url(../../assets/images/bg.png);
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;

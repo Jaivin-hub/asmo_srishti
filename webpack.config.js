@@ -66,7 +66,7 @@ module.exports = {
       filename: 'home.html',
     }),
     new MiniCssExtractPlugin({
-      filename: 'css/style.css',
+      filename: 'assets/css/style.css',
     }),
     new CopyWebpackPlugin({
       patterns: [
